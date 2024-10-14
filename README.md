@@ -1,0 +1,2 @@
+Ohmyfood
+Ohmyfood est un site web qui répertorie les menus de restaurants gastronomiques. Il permet aux utilisateurs de composer leur menu à l'avance pour réduire le temps d'attente au restaurant. Ce projet vise à développer le site en adoptant une approche mobile first, avec des animations CSS soignées, en respectant les maquettes fournies.
