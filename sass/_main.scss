@@ -1,0 +1,169 @@
+main {
+  .presentation {
+    text-align: center;
+    padding: 2rem 1rem;
+
+    h1 {
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $text-color;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .explore-btn {
+      background: linear-gradient(180deg, #FF79DA, #9356DC); /* Dégradé de couleurs */
+      color: white;
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 50px; /* Arrondi total du bouton */
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Ombre portée pour effet de profondeur */
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+        transform: translateY(-3px); /* Légère remontée au survol */
+      }
+    }
+  }
+
+  .fonctionnement {
+    padding: 2rem 1rem;
+    background-color: white;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .step {
+        display: flex;
+        align-items: center;
+        background: #F6F6F6;
+        padding: 1rem;
+        border-radius: 12px; /* Arrondi plus prononcé */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Ombre portée plus prononcée */
+        gap: 1rem;
+        position: relative;
+        margin-left: 0.5rem;
+
+        /* Numéro dans le cercle */
+        &::before {
+          content: attr(data-step); /* Utilisation de l'attribut personnalisé pour le numéro */
+          background-color: #9356DC;
+          color: white;
+          font-size: 1.2rem;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          position: absolute;
+          left: -12px; /* Décalage à gauche du cercle */
+          top: 50%;
+          transform: translateY(-50%); /* Centrage vertical */
+        }
+
+        /* Icônes et texte */
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+          color: #333;
+
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .restaurants {
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .restaurant-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+  
+        &:hover {
+          text-decoration: none;
+        }
+      }
+  
+      .restaurant-card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+  
+        /* Cible uniquement l'image de la carte de restaurant (pas celle du bouton) */
+        > img { 
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px 10px 0 0;
+        }
+
+        .restaurant-overlay {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+
+          .restaurant-info {
+            flex-grow: 1;
+
+            h3 {
+              font-size: 1.2rem;
+              margin-bottom: 0.5rem;
+            }
+
+            p {
+              font-size: 1rem;
+              color: $text-color;
+            }
+          }
+
+          .like-btn {
+            width: 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: $text-color;
+
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
