@@ -5,16 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La palette du goût - Ohmyfood</title>
         <link rel="stylesheet" href="../assets/css/style.css" />
-        <link rel="stylesheet" href="../assets/css/restaurant.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet" />
     </head>
     <body>
         <!-- Header -->
         <header>
             <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
+                <a href="../index.html" class="back-arrow">
+                    <img src="../assets/images/arrow-left-solid.svg" alt="Retour" />
                 </a>
+                <img src="../assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
             </div>
             <div class="location">
                 <i><img src="../assets/images/Pin.svg" alt="Location" /></i>
@@ -31,97 +31,160 @@
                     </div>
                     <div class="restaurant-title">
                         <h1>
-                            La palette du goût <button class="like-btn"><img src="../assets/images/Vector.svg" alt="Favoris" /></button>
+                            La palette du goût
+                            <button class="like-btn" aria-label="Ajouter aux favoris">
+                                <img src="../assets/images/heart.svg" alt="Icône cœur" class="heart-icon base" />
+                                <img src="../assets/images/heartPurple.svg" alt="Icône cœur rempli" class="heart-icon hover" />
+                            </button>
                         </h1>
                     </div>
                 </section>
 
                 <div class="menu-section">
                     <h2>Entrées</h2>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Fricassée d'escargots</p>
-                            <small>Au piment d'Espelette</small>
-                        </div>
-                        <span>25€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Fricassée d'escargots</p>
+                                <small>Au piment d'Espelette</small>
+                            </div>
+                            <span>25€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Foie gras de canard mi-cuit</p>
-                            <small>Et ses copeaux de truffe noire</small>
-                        </div>
-                        <span>35€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Foie gras de canard mi-cuit</p>
+                                <small>Et ses copeaux de truffe noire</small>
+                            </div>
+                            <span>35€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Œuf au plat</p>
-                            <small>Assaisonné à la truffe sur lit de caviar</small>
-                        </div>
-                        <span>20€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Œuf au plat</p>
+                                <small>Assaisonné à la truffe sur lit de caviar</small>
+                            </div>
+                            <span>20€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
 
                     <h2>Plats</h2>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Filet de bœuf aux herbes</p>
-                            <small>Accompagné de sa ribambelle de légumes</small>
-                        </div>
-                        <span>40€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Filet de bœuf aux herbes</p>
+                                <small>Accompagné de sa ribambelle de légumes</small>
+                            </div>
+                            <span>40€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Parmentier de queue de bœuf</p>
-                            <small>À la truffe noire sur sa purée de panais</small>
-                        </div>
-                        <span>35€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Parmentier de queue de bœuf</p>
+                                <small>À la truffe noire sur sa purée de panais</small>
+                            </div>
+                            <span>35€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Filet de turbot</p>
-                            <small>Aux agrumes</small>
-                        </div>
-                        <span>44€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Filet de turbot</p>
+                                <small>Aux agrumes</small>
+                            </div>
+                            <span>44€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
 
                     <h2>Desserts</h2>
-                    <div class="menu-item">
-                        <div>
-                            <p>Paris-Brest</p>
-                            <small>Revisité</small>
-                        </div>
-                        <span>18€</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <p>Macaron au chocolat d'exception</p>
-                            <small>Et glace à la vanille de Madagascar</small>
-                        </div>
-                        <span>22€</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <p>Mousse au chocolat</p>
-                            <small>Au piment d'Espelette et à la truffe noire</small>
-                        </div>
-                        <span>23€</span>
-                    </div>
-                </div>
 
-                <button class="order-btn">Commander</button>
+                    <div class="menu-item">
+                        <label>
+                            <div class="item-content">
+                                <p>Paris-Brest</p>
+                                <small>Revisité</small>
+                            </div>
+                            <span>18€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="menu-item">
+                        <label>
+                            <div class="item-content">
+                                <p>Macaron au chocolat d'exception</p>
+                                <small>Et glace à la vanille de Madagascar</small>
+                            </div>
+                            <span>22€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="menu-item">
+                        <label>
+                            <div class="item-content">
+                                <p>Mousse au chocolat</p>
+                                <small>Au piment d'Espelette et à la truffe noire</small>
+                            </div>
+                            <span>23€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
+                    </div>
+                    <button class="order-btn">Commander</button>
+                </div>
             </section>
         </main>
 
         <!-- Footer -->
         <footer>
+            <div class="logo-footer">
+                <h2>ohmyfood</h2>
+            </div>
             <nav>
-                <a href="#">Proposer un restaurant</a>
-                <a href="#">Devenir partenaire</a>
+                <a href="#">
+                    <img src="../assets/images/food.svg" alt="Icône restaurant" />
+                    Proposer un restaurant
+                </a>
+                <a href="#">
+                    <img src="../assets/images/hand.svg" alt="Icône partenaire" />
+                    Devenir partenaire
+                </a>
                 <a href="#">Mentions légales</a>
                 <a href="#">Contact</a>
             </nav>
-            <div class="logo-footer">
-                <img src="../assets/images/logo.png" alt="Logo Ohmyfood" />
-            </div>
         </footer>
     </body>
 </html>

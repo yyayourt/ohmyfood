@@ -1,0 +1,20 @@
+.like-btn {
+  @include reset-button;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.heart-icon {
+  @include icon-size(2rem);
+  display: block;
+
+  &.hover {
+    @include absolute-top-left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.like-btn:hover .heart-icon.hover {
+  opacity: 1;
+}

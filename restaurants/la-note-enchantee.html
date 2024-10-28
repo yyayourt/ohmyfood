@@ -5,16 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La note enchantée - Ohmyfood</title>
         <link rel="stylesheet" href="../assets/css/style.css" />
-        <link rel="stylesheet" href="../assets/css/restaurant.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet" />
     </head>
     <body>
         <!-- Header -->
         <header>
             <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
+                <a href="../index.html" class="back-arrow">
+                    <img src="../assets/images/arrow-left-solid.svg" alt="Retour" />
                 </a>
+                <img src="../assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood" />
             </div>
             <div class="location">
                 <i><img src="../assets/images/Pin.svg" alt="Location" /></i>
@@ -31,104 +31,173 @@
                     </div>
                     <div class="restaurant-title">
                         <h1>
-                            La note enchantée <button class="like-btn"><img src="../assets/images/Vector.svg" alt="Favoris" /></button>
+                            La note enchantée
+                            <button class="like-btn" aria-label="Ajouter aux favoris">
+                                <img src="../assets/images/heart.svg" alt="Icône cœur" class="heart-icon base" />
+                                <img src="../assets/images/heartPurple.svg" alt="Icône cœur rempli" class="heart-icon hover" />
+                            </button>
                         </h1>
                     </div>
                 </div>
 
                 <div class="menu-section">
                     <h2>Entrées</h2>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Ravioles de foie gras</p>
-                            <small>Accompagnées de leur crème à la truffe</small>
-                        </div>
-                        <span>25€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Ravioles de foie gras</p>
+                                <small>Accompagnées de leur crème à la truffe</small>
+                            </div>
+                            <span>25€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Caviar osciètre</p>
-                            <small>Sur blini à la farine de blé noir</small>
-                        </div>
-                        <span>35€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Caviar osciètre</p>
+                                <small>Sur blini à la farine de blé noir</small>
+                            </div>
+                            <span>35€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Homard et espuma de potiron</p>
-                            <small>Marinés aux zestes d'orange</small>
-                        </div>
-                        <span>20€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Homard et espuma de potiron</p>
+                                <small>Marinés aux zestes d'orange</small>
+                            </div>
+                            <span>20€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Foie gras de canard cuit entier</p>
-                            <small>Confiture de figue et pain toasté</small>
-                        </div>
-                        <span>35€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Foie gras de canard cuit entier</p>
+                                <small>Confiture de figue et pain toasté</small>
+                            </div>
+                            <span>35€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
 
                     <h2>Plats</h2>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Noix de coquilles Saint-Jacques</p>
-                            <small>Sur lit de purée de céleri-rave</small>
-                        </div>
-                        <span>40€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Noix de coquilles Saint-Jacques</p>
+                                <small>Sur lit de purée de céleri-rave</small>
+                            </div>
+                            <span>40€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Langoustine poêlée</p>
-                            <small>Purée de patate douce</small>
-                        </div>
-                        <span>35€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Langoustine poêlée</p>
+                                <small>Purée de patate douce</small>
+                            </div>
+                            <span>35€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
+
                     <div class="menu-item">
-                        <div>
-                            <p>Mijoté de queue de bœuf</p>
-                            <small>Et riz sauvage aux zestes de citron</small>
-                        </div>
-                        <span>44€</span>
+                        <label>
+                            <div class="item-content">
+                                <p>Mijoté de queue de bœuf</p>
+                                <small>Et riz sauvage aux zestes de citron</small>
+                            </div>
+                            <span>44€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
                     </div>
 
                     <h2>Desserts</h2>
-                    <div class="menu-item">
-                        <div>
-                            <p>Macaron noisette et chocolat</p>
-                            <small>Glace au caramel brun et sel de Guérande</small>
-                        </div>
-                        <span>18€</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <p>Baba au rhum revisité</p>
-                            <small>Avec son coulis de citron</small>
-                        </div>
-                        <span>22€</span>
-                    </div>
-                    <div class="menu-item">
-                        <div>
-                            <p>Tarte au citron meringuée</p>
-                            <small>Déstructurée</small>
-                        </div>
-                        <span>23€</span>
-                    </div>
-                </div>
 
-                <button class="order-btn">Commander</button>
+                    <div class="menu-item">
+                        <label>
+                            <div class="item-content">
+                                <p>Macaron noisette et chocolat</p>
+                                <small>Glace au caramel brun et sel de Guérande</small>
+                            </div>
+                            <span>18€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="menu-item">
+                        <label>
+                            <div class="item-content">
+                                <p>Baba au rhum revisité</p>
+                                <small>Avec son coulis de citron</small>
+                            </div>
+                            <span>22€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="menu-item">
+                        <label>
+                            <div class="item-content">
+                                <p>Tarte au citron meringuée</p>
+                                <small>Déstructurée</small>
+                            </div>
+                            <span>23€</span>
+                            <div class="validation">
+                                <img src="../assets/images/Check.svg" alt="Validé" />
+                            </div>
+                        </label>
+                    </div>
+                    <button class="order-btn">Commander</button>
+                </div>
             </section>
         </main>
 
         <!-- Footer -->
         <footer>
+            <div class="logo-footer">
+                <h2>ohmyfood</h2>
+            </div>
             <nav>
-                <a href="#">Proposer un restaurant</a>
-                <a href="#">Devenir partenaire</a>
+                <a href="#">
+                    <img src="../assets/images/food.svg" alt="Icône restaurant" />
+                    Proposer un restaurant
+                </a>
+                <a href="#">
+                    <img src="../assets/images/hand.svg" alt="Icône partenaire" />
+                    Devenir partenaire
+                </a>
                 <a href="#">Mentions légales</a>
                 <a href="#">Contact</a>
             </nav>
-            <div class="logo-footer">
-                <img src="../assets/images/logo.png" alt="Logo Ohmyfood" />
-            </div>
         </footer>
     </body>
 </html>
