@@ -1,0 +1,176 @@
+// Tablette
+@media screen and (min-width: map-get($breakpoints, 'tablet')) {
+  .presentation {
+    padding: 3rem 2rem;
+    
+    h1 {
+      font-size: 2.5rem !important;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Styles restaurant page
+  .restaurant-details {
+    background-color: white;
+    padding: 0;
+
+    .restaurant-header {
+      @include flex-between;
+
+      h1 {
+        text-align: left;
+      }
+
+      .restaurant-image {
+        height: 300px;
+      }
+    }
+
+    .menu-section {
+      @include centered-container;
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .menu-item {
+        max-width: 700px;
+        margin: 1rem auto;
+      }
+    }
+
+    .order-btn {
+      margin: 3rem auto;
+      display: block;
+      width: fit-content;
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: map-get($breakpoints, 'desktop')) {
+  .container {
+    @include centered-container;
+  }
+
+  // Section fonctionnement
+  .fonctionnement {
+    h2 {
+      @include desktop-section-title;
+    }
+
+    .steps {
+      @include flex($justify: space-between !important);
+      flex-direction: row !important;
+      gap: 2rem !important;
+
+      .step {
+        padding: 1.9rem !important;
+        padding-right: 5rem !important;
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+
+  // Section restaurants
+  .restaurants {
+    @include centered-container;
+    padding: 2rem 4rem;
+
+    h2 {
+      @include desktop-section-title;
+    }
+
+    .restaurant-list {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      
+      a {
+        margin: 0;
+        width: 100%;
+      }
+
+      .restaurant-card {
+        height: 100%;
+      }
+    }
+  }
+
+  // Footer
+  footer {
+    padding: 3rem 4rem 1rem;
+
+    .logo-footer {
+      display: none;
+    }
+
+    nav {
+      @include flex($justify: flex-end, $align: flex-end);
+      gap: 3rem;
+
+      span {
+        @include flex($justify: flex-start);
+        gap: 1rem;
+      }
+
+      .logo-footer1 {
+        @include flex;
+
+        h2 {
+          margin: 1rem 0 0 2rem !important;
+        }
+      }
+    }
+  }
+
+  // Styles restaurant page
+  .restaurant-details {
+    @include centered-container(100%);
+    background-color: white;
+
+    .restaurant-header {
+      h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+      }
+
+      .restaurant-image {
+        height: 450px;
+        width: 100%;
+      }
+
+      .restaurant-title {
+        @include centered-container(1000px);
+        @include absolute(null, null, -85px, 50%);
+        transform: translateX(-50%);
+      }
+    }
+
+    .menu-section {
+      @include centered-container(1000px);
+      padding: 5rem 2rem 0;
+
+      h2 {
+        margin-left: 7.8rem;
+        text-align: center;
+      }
+
+      .menu-item {
+        max-width: 700px;
+        margin: 1rem auto;
+      }
+    }
+  }
+}
+
+// Grand écran
+@media screen and (min-width: map-get($breakpoints, 'large')) {
+  .restaurants .restaurant-list {
+    gap: 3rem;  
+  }
+}

@@ -6,20 +6,29 @@ footer {
     nav {
       @include flex-column;
       align-items: flex-start;
-      margin-bottom: 1rem;
+
+      span {
+        @include flex-column;
+        gap: 0;
+      }
   
       a {
         @include footer-link;
+        margin-bottom: 0.5rem;
       }
     }
-  
-    .logo-footer {
+
+    .logo-footer, .logo-footer1 {
         h2 {
             @include footer-title;
         }
-    }
-  
-    .logo-footer img {
-      width: 100px;
+        
+        &1 {
+            display: none;
+        }
+        
+        img {
+            width: 100px;
+        }
     }
 }

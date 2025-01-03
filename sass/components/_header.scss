@@ -2,7 +2,7 @@ header {
   @include flex-column;
   
   .logo {
-    @include centered-flex;
+    @include flex-center;
     width: 100%;
     box-shadow: $box-shadow;
     z-index: 1;
@@ -14,9 +14,7 @@ header {
     }
 
     .back-arrow {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
+      @include absolute(50%, null, null, 1rem);
       transform: translateY(-50%);
 
       img {
@@ -27,7 +25,7 @@ header {
   }
 
   .location {
-    @include centered-flex;
+    @include flex-center;
     font-size: 1rem;
     color: $text-color;
     background: #EAEAEA;
@@ -36,7 +34,6 @@ header {
     box-shadow: $box-shadow;
 
     i {
-      @include centered-flex;
       margin-right: 0.5rem;
       color: $primary-color;
     }

@@ -9,7 +9,7 @@
   display: block;
 
   &.hover {
-    @include absolute-top-left;
+    @include absolute(0, null, null, 0);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }

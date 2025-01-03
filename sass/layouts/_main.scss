@@ -1,22 +1,30 @@
 main {
   .presentation {
-    @include centered-text-block;
+    text-align: center;
+    padding: 2rem 1rem;
 
     h1 {
-      @include main-title;
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $text-color;
     }
 
     p {
-      @include main-paragraph;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .explore-btn {
       @include gradient-button;
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
     }
   }
 
   .fonctionnement {
-    @include section-padding;
+    padding: 2rem 1rem;
     background-color: white;
 
     h2 {
@@ -24,7 +32,8 @@ main {
     }
 
     .steps {
-      @include flex-column-gap(1.5rem);
+      @include flex-column;
+      gap: 1.5rem;
 
       .step {
         @include step-style;
@@ -35,27 +44,33 @@ main {
 
         span {
           @include step-content;
+          
+          img {
+            margin-left: 10px;
+          }
         }
       }
     }
   }
 
   .restaurants {
-    @include section-padding;
+    padding: 2rem 1rem;
 
     h2 {
       @include section-title;
     }
 
     .restaurant-list {
-      @include flex-column-gap(1rem);
+      @include flex-column;
+      gap: 1rem;
 
       a {
-        @include reset-link;
+        text-decoration: none;
+        color: inherit;
       }
 
       .restaurant-card {
-        @include card-style;
+        @include card-base;
         position: relative;
 
         > img {
@@ -63,15 +78,13 @@ main {
         }
 
         .new-tag {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
+          @include absolute(1rem, 1rem);
           background-color: $tertiary-color;
           color: darken($tertiary-color, 40%);
           padding: 0.5rem 1rem;
           font-size: 0.9rem;
           font-weight: bold;
-          border-radius: 3px;
+          border-radius: $border-radius-small;
         }
 
         .restaurant-overlay {
@@ -92,21 +105,6 @@ main {
         }
       }
     }
-  }
-}
-
-@keyframes fill-heart {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 

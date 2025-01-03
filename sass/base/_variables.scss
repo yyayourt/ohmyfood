@@ -1,0 +1,37 @@
+// Couleurs
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #f8f8f8;
+$text-color: #333;
+$white: #FFFFFF;
+
+// Polices
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Shrikhand', cursive;
+
+// Transitions
+$transition-default: all 0.3s ease-in-out;
+$menu-transition: all 0.5s ease;
+
+// Border radius
+$border-radius-small: 3px;
+$border-radius-medium: 12px;
+
+// Box shadows
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadows: (
+  'light': 0 2px 4px rgba(0, 0, 0, 0.1),
+  'medium': 0 4px 6px rgba(0, 0, 0, 0.1),
+  'heavy': 0 4px 15px rgba(0, 0, 0, 0.35)
+);
+
+// Breakpoints
+$breakpoints: (
+  'tablet': 768px,
+  'desktop': 1024px,
+  'large': 1400px
+);
+
+// Dimensions
+$validation-width: 60px;
