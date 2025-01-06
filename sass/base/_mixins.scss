@@ -180,7 +180,7 @@
   @include flex-center;
   @include absolute(0, 0);
   height: 100%;
-  width: $validation-width;
+  width: 60px;
   background-color: $tertiary-color;
   border-radius: 0 $border-radius-medium $border-radius-medium 0;
   transition: $menu-transition;
@@ -189,20 +189,6 @@
   img {
     width: 24px;
     height: 24px;
-  }
-}
-
-@mixin menu-item-hover {
-  .validation {
-    margin-right: 0;
-  }
-
-  .item-content {
-    max-width: calc(100% - 60px);
-  }
-
-  span {
-    margin-right: 70px;
   }
 }
 
