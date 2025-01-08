@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .loader-container {
   position: fixed;
   inset: 0;
@@ -220,6 +224,7 @@ main .presentation .explore-btn {
   display: block;
   margin: 0 auto;
   width: fit-content;
+  text-decoration: none;
 }
 main .presentation .explore-btn:hover {
   background: linear-gradient(170deg, rgb(255, 136.3, 222.2246268657), rgb(155.1, 98.675, 222.625));
@@ -637,7 +642,8 @@ main .restaurants .restaurant-list .restaurant-card .restaurant-overlay .restaur
   .restaurants .restaurant-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    column-gap: 4rem !important;
+    row-gap: 2rem !important;
   }
   .restaurants .restaurant-list a {
     margin: 0;

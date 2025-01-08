@@ -88,7 +88,8 @@
     .restaurant-list {
       display: grid !important;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      column-gap: 4rem !important;
+      row-gap: 2rem !important;
       
       a {
         margin: 0;
